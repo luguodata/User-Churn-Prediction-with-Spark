@@ -16,6 +16,7 @@ Since customer churn or not is a binary outcome, the classification models will 
 Churn or stay group is imblanced, F1 score, AUC score will be as the evalution metrics inteading of accuracy.
 
 
+
 ## Project Outline
 
 `1.` Load and Clean Dataset <br>
@@ -32,13 +33,16 @@ Churn_Prediction_with_Spark.ipynb -- Data Exploratory and Model Constructing on 
 
 In this project, digital music service user log data has been explicitly explored by using Spark. A lot work been done such as data cleaning, churn defining, data transformation, exploratory between churn/stay groups. At last, we built data processing and machine learning piplines. Using several algorithms and parameter tuning to train churn model and got fine predicted results on test set. Finally, we got pretty good model performance. The AUC score of random forest and Logistic Regression predictions on test set are both above 0.8.  F1 score of logistic Regression is abot 0.91. However, due to the limited size of this dataset , the result might be unstable if we change train, test dataset.
 
-* Ways to improve
+* Ways to Improve
 1. Re-analyze the whole process on the full size dataset. The whole dataset user log scenario might be very different with the small one.
 2. Set spark cluster on AWS EMR, which allow to access the full dataset in S3 and alos could boost calculation speed.
 3. Continue to extract more useful features and try more algorithms and parameter tunings.
 
 
+## Blog Post
 
+I posted the whole analysis process into Medium. Link is here:
+https://medium.com/@lguodata/user-churn-prediction-with-spark-a2e6abb39fb
 
 
 ## Required packages
@@ -48,6 +52,8 @@ In this project, digital music service user log data has been explicitly explore
 `datetime` <br>
 `matplotlib` <br>
 `seaborn` <br>
+
+
 
 ## Reference
 Level changes for each user along time: <br>
