@@ -44,7 +44,6 @@ In this project, digital music service user log data has been explicitly explore
 I posted the whole analysis process into Medium. Link is here:
 https://medium.com/@lguodata/user-churn-prediction-with-spark-a2e6abb39fb
 
-
 ## Required packages
 `pyspark` <br>
 `pandas` <br>
